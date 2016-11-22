@@ -3,10 +3,7 @@ const $ = require('gulp-load-plugins')();
 const source = require("vinyl-source-stream");
 const buffer = require('vinyl-buffer');
 const browserify = require("browserify");
-//const watchify = require("watchify");
 const babelify = require("babelify");
-//const path = require("path");
-//const fs = require("fs");
 
 // CONFIG
 const config = {
@@ -19,7 +16,7 @@ const config = {
     }
 }
 
-// TASKs
+// TASKS
 gulp.task("dev:scripts", scripts);
 
 function scripts() {
@@ -33,38 +30,6 @@ function scripts() {
 
 // HELPER FUNCTIONS
 const bundlers = {};
-
-// function dev(file) {
-// 	const bundler = createBundler(file);
-// 	const filename = path.basename(file);
-//         if(bundlers.hasOwnProperty(file)) { return; }
-//         bundlers[file] = bundler;
-//
-//         const watcher = watchify(bundler);
-//
-//         watcher.on("update", () => {
-//             console.log("Building...");
-//             bundle();
-//         });
-//
-//         watcher.on("time", (buildTime) => {
-//             console.log(`Built in: ${buildTime}ms`);
-//         });
-//
-//    	bundle();
-//
-//     function bundle() {
-//         return bundler
-//             .bundle()
-//             .on("error", error => console.error(error))
-//             .pipe(source(filename))
-//             .pipe(buffer())
-//             .pipe($.sourcemaps.init())
-//             .pipe($.sourcemaps.write("."))
-//             .pipe(gulp.dest(config.scripts.dest));
-//     }
-//
-// }
 
 
 function createBundler(file) {
