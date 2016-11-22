@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #444;
+}
+/* WRAPPER */
+.wrapper {
+    display: flex;
+}
+
+/* DOUBLE */
+.product-header,
+.basket-header {
+    display: flex;
+    font-family: 'Roboto Slab', serif;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    box-shadow: 0 1px 0px #aaa;
+}
+
+.product-header-product,
+.basket-header-product {
+    box-sizing: border-box;
+    width: 60%;
+    padding-left: 20px;
+}
+
+.product-header-item,
+.basket-header-item {
+    box-sizing: border-box;
+    padding-left: 20px;
+    width: 20%;
+}
+
+.product-item-price,
+.product-item-form {
+    width: 20%
+}
+
+.product-item-price,
+.basket-item-price {
+    box-sizing: border-box;
+    text-align: right;
+    padding-right: 15px;
+    min-width: 100px;
+}
+
+.product-item-btn,
+.basket-item-btn {
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #47BB78;
+    color: #eee;
+    font-size: 12px;
+    padding: 0 10px;
+    height: 30px;
+}
+
+/* PRODUCT LIST */
+.product-list {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    min-height: 100vh;
+    background-color: #eee;
+}
+
+.product-item {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #cecece;
+}
+
+.product-item-name {
+    box-sizing: border-box;
+    line-height: 40px;
+    width: 60%;
+    padding-left: 20px;
+}
+
+
+.product-item-form {
+    box-sizing: border-box;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    min-width: 70px;
+    padding-top: 5px;
+    padding-left: 30px;
+}
+
+.product-item-form-input {
+    text-align: center;
+    box-sizing: border-box;
+    width: 50px;
+    height: 30px;
+    border: none;
+    background-color: #eee;
+    border-radius: 0;
+    outline: none;
+}
+
+.product-item-form-input:focus {
+    border-bottom: 1px solid #444;
+}
+
+.product-item-btn {
+    margin-left: 20px;
+}
+.product-item-btn:hover {
+background-color: #58CC89;
+}
+/* BASKET */
+
+.basket-item-btn {
+    font-size: 16px;
+    background-color: transparent;
+    color: #444;
+    margin: 5px 7px;
+    padding: 0 7px;
+}
+
+.basket-item-btn:hover {
+    background-color: #ececec;
+}
+
+.basket-item-btn:focus {
+    outline: 0;
+}
+
+.remove {
+    font-size: 12px;
+    background-color: #CC4747;
+    color: #eee;
+}
+
+.remove:hover {
+    background-color: #DD5858;
+}
+
+.basket {
+ display: flex;
+ min-height: 100vh;
+ flex-direction: column;
+ width: 50vw;
+}
+
+.basket-list {
+ flex-grow: 1;
+ display: flex;
+ flex-direction: column;
+ background-color: #dedede;
+}
+
+.basket-header-item {
+    box-sizing: border-box;
+    width: 30%;
+}
+
+.basket-item {
+    display: flex;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #cecece;
+}
+
+.basket-item-name {
+    box-sizing: border-box;
+    padding-left: 20px;
+    width: 60%;
+}
+.basket-item-price,
+.basket-item-amount {
+    box-sizing: border-box;
+    width: 30%;
+}
+
+.basket-item-amount {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 10px;
+    min-width: 100px;
+}
+
+.basket-total {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-top: auto;
+    padding-left: 20px;
+    height: 50px;
+    line-height: 50px;
+    min-width: 100%;
+    background-color: #777;
+    color: #eee;
+}
+
+.basket-total-price {
+    display: inline-block;
+    min-width: 70px;
+    text-align: right;
+}
+
+.basket-info {
+    color: #777;
+    text-align: center;
+    line-height: 40vw;
+}
